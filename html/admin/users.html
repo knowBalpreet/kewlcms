@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+
+    <title>KewlCMS | Dashboard</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">KewlCMS</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search Articles...">
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="index.html">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="article.html">Articles</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="groups.html">User Groups</a></li>
+            <li><a href="settings.html">Settings</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+     		<h1 class="page-header">Users</h1><a href="add_articles.html" class="btn btn-success" style="float: right;">Add User</a> 
+        <br><br>
+        	<div class="table-responsive">
+        		<table class="table table-striped" style="width: 100%">
+                  <thead>
+                    <th width="70">#</th>
+                    <th>Name</th>
+                    <th>UserName</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>sit</td>
+                      <td>sit</td>
+                      <td>sit</td>
+                      <td><a href="edit_article.html" class="btn btn-primary">Edit</a><a href="#" class="btn btn-danger">Delete</a></td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>elit</td>
+                      <td>elit</td>
+                      <td>elit</td>
+                      <td><a href="edit_article.html" class="btn btn-primary">Edit</a><a href="#" class="btn btn-danger">Delete</a></td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>lorem</td>
+                      <td>lorem</td>
+                      <td>lorem</td>
+                      <td><a href="edit_article.html" class="btn btn-primary">Edit</a><a href="#" class="btn btn-danger">Delete</a></td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>ipsum</td>
+                      <td>ipsum</td>
+                      <td>ipsum</td>
+                      <td><a href="edit_article.html" class="btn btn-primary">Edit</a><a href="#" class="btn btn-danger">Delete</a></td>
+                    </tr>
+                  </tbody>
+            </table>
+        	</div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+
+    <title>KewlCMS | Dashboard</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">KewlCMS</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search Articles...">
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="index.html">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="article.html">Articles</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="groups.html">User Groups</a></li>
+            <li><a href="settings.html">Settings</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+     		 <form>
+          <div class="row">
+            <div class="col-md-6">
+              <h1>Add Article</h1>              
+            </div>
+            <div class="col-md-6">
+              <div class="btn-group pull-right">
+                <input type="submit" name="submit" id="page_submit" class="btn btn-default" value="Save">
+                <a href="#" class="btn btn-default">Close</a>
+              </div>
+            </div>
+          </div> 
+          <div class="row">
+            <div class="col-md-12">
+              <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fa fa-pencil"></i> Articles</a></li>
+                <li class="active"><i class="fa fa-plus-square-o"></i> Add Article</li>
+              </ol>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="form-group">
+                <label>Article Title</label>
+                <input type="text" name="title" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Article Body</label>
+                <textarea class="form-control" rows="10"></textarea>
+              </div>
+              <div class="form-group">
+                <label>Access</label>
+                <select name="access" class="form-control">
+                  <option value="0">Everyone</option>
+                </select>
+                <p class="help-block">Choose who will be able to access the article</p>
+              </div>
+              <div class="form-group">
+                <label>Author</label>
+                <select name="user" class="form-control">
+                  <option value="0">Select Author</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Published</label>
+                <label for="is_publisher" class="radio-inline"><input type="radio" name="is_published" value="1" checked>Yes</label>
+                <label class="radio-inline"><input type="radio" name="is_published" value="0">No</label>
+
+              </div>
+            </div>
+          </div>
+         </form>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

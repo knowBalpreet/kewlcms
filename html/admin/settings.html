@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+
+    <title>KewlCMS | Dashboard</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">KewlCMS</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search Articles...">
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="index.html">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="article.html">Articles</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="groups.html">User Groups</a></li>
+            <li><a href="settings.html">Settings</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+     		 <form>
+          <div class="row">
+            <div class="col-md-6">
+              <h1>Settings</h1>              
+            </div>
+            <div class="col-md-6">
+              <div class="btn-group pull-right">
+                <input type="submit" name="submit" id="page_submit" class="btn btn-default">
+                <a href="#" class="btn btn-default">Close</a>
+              </div>
+            </div>
+          </div> 
+          <div class="row">
+            <div class="col-md-12">
+              <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+                <li class="active"><i class="fa fa-plus-square-o"></i> Settings</li>
+              </ol>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="form-group">
+                <label>Site Title</label>
+                <input type="text" name="site_title" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="page_body">Site Description</label>
+                <textarea class="form-control" name="site_description"></textarea>
+              </div>
+              <div class="form-group">
+                <label>Jumbotron Heading</label>
+                <input type="text" name="jheading" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Jumbotron Text</label>
+                <textarea type="text" name="jtext" rows="10" class="form-control"></textarea>
+              </div>
+              <div class="form-group">
+                <label>Jumbotron Button Text</label>
+                <input type="text" name="jbuttontext" class="form-control">
+              </div>
+            </div>
+          </div>
+         </form>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
